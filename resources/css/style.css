@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {
+  background-color: #ccc;
+}
+
+caption {
+  text-align: center;
+  font-size: 20px;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}
