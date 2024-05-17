@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Almanack</title>
-<link rel="stylesheet" href="resources/css/style.css">
-<script src="resources/js/current-time.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Almanack</title>
+	<link rel="stylesheet" href="resources/css/style.css">
+	<script src="resources/js/script.js"></script>
 </head>
 <body>
-<h1>Welcome to Almanack</h1>
-<p>Creator: SKM</p>
 
-<table>
-    <caption>Product Sales</caption>
-    <thead>
-      <tr>
-        <th>Product Name</th>
-        <th>Quantity Sold</th>
-        <th>Total Revenue</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Shoes</td>
-        <td>100</td>
-        <td>$1000</td>
-      </tr>
-      <tr>
-        <td>Shirts</td>
-        <td>50</td>
-        <td>$500</td>
-      </tr>
-      <tr>
-        <td>Pants</td>
-        <td>25</td>
-        <td>$250</td>
-      </tr>
-    </tbody>
-  </table>
+	<div class="topnav">
+	  <a href="#home">Almanack</a>
+	  <a class="split" href="#about">About</a>
+	  <a class="split" href="#contact">Contact</a>
+	  <a class="split" href="#news">News</a>
+	  <a class="split" href="#home">Home</a>
+	</div>
+	
+	<h1>Life in Numbers</h1>
+	
+	<h3>Home Loan Calculator</h3>
+	<form id="loan-calculator">
+		<label for="loan-amount">Loan Amount:</label>
+		<input type="number" id="loan-amount" placeholder="Enter amount">
 
-<p>Current Time: </p>
-<div id="present-time"></div>
-<p>Almanack is part of SKM Enterprise</p>
+		<label for="interest-rate">Interest Rate (%):</label>
+		<input type="number" id="interest-rate" placeholder="Enter rate">
 
+		<label for="loan-term">Loan Term (Years):</label>
+		<input type="number" id="loan-term" placeholder="Enter term">
+		<p></p>
+		<button type="button" onclick="calculatePayment()">Calculate Payment</button>
+    </form>
+    <p id="payment-result"></p>
+	
+	
+	<div id="footer-text">Almanack is part of SKM Enterprise</div>
 </body>
 </html>
